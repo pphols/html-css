@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  background-color: rgb(198, 255, 165);
+  margin: 0px;
+}
+header{
+  background-color: rgb(194, 159, 227);
+  text-align: center;
+  font-size: 20px;
+  color: rgb(26, 185, 26);
+  margin: auto;
+  padding: 5px;
+}
+nav{
+  background-color: blueviolet;
+  padding: 7px;
+  margin: 0px;
+  box-shadow: 1px 1px 4px black;
+  border-radius: 5px 10px;
+}
+nav>a{
+  text-decoration: none;
+  color: antiquewhite;
+  margin-right: 20px;
+}
+nav> a:hover{
+  text-decoration:underline;
+}
+main{
+  background-color: rgb(131, 131, 251);
+  color: rgb(61, 49, 186);
+  padding: 10px;
+  margin:10px; 
+}
+section>p{
+  background-color: rgb(47, 47, 253);
+  color: antiquewhite;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 4px black;
+  border-radius: 5px 10px;
+
+}
+article{
+  background-color: rgb(198, 255, 165);
+  border-radius: 5px;
+}
+article>h2{
+  color: rgb(26, 185, 26);
+  font-style: italic;
+  margin: 20px;
+  padding-top: 10px;
+}
+article>h2:hover{
+  text-decoration: underline;
+}
+article>p{
+  text-align: justify;
+  margin: 20px;
+}
+aside{
+  text-decoration: underline;
+  font-style: italic;
+  margin: 25px;
+  padding-bottom: 5px;
+}
+
+footer{
+  background-color: blueviolet;
+  color: antiquewhite;
+  text-align: center;
+  font-style: italic;
+}
+
+div#bola{
+  height: 50px;
+  width: 50px;
+  background-color: blueviolet;
+  margin:auto;
+  border-radius: 50%;
+}

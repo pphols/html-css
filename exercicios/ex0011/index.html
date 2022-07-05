@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídia em HTML5</title>
+</head>
+<body>
+  <h1>Imagem Dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+
+  <picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+  <img src="imagens/foto-g.png" alt="imagem flexível">
+  </picture>
+  <!-- para gerar imagens flexíveis para todas as telas devemos usar a tag SOUCE MEDIA TYPE, mudar de min-width para max-width e dar sempre uma folga em relação ao tamanho da imagem para evitar que apareça barra de rolagem ex: a imagem foto-g tem tamanho 1000x1000 por isso na definição da mudança de tamanho colocamos 1050 -->
+  <h1>Reproduzindo áudios</h1>
+  <p>Vamos reproduzir áudios com HTML5</p>
+  <audio preload="metadata" controls> 
+    <source src="audios/happy-mistake.mp3" type="audio/mpeg">
+    <source src="audios/happy-mistake.ogg" type="audio/ogg">
+    <source src="audios/happy-mistake.wav" type="audio/wav">
+  </audio>
+<!-- Alguns navegadores não rodam audio mp3 por isso é uma boa idéia colocar o mesmo áudio em vários formatos assim com sorte pelo menos um deles vai funcionar, é importante lembrar tambem que o formato wav é o MENOS recomendado já que ele ocupa muito espaço. Outra boa solução para problemas com áudio é colocar ele para download assim o usuário poderá baixar e ouvir direto do computador. -->
+  <p>Caso o seu navegador não carregue o áudio você pode <a href="audios/happy-mistake.mp3">Clicar Aqui</a> para fazer download</p>
+</body>
+</html>

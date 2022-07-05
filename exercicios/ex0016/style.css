@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(180deg, #011526, #012E40, #025959, #02735E, #038C65);
+}
+
+main{
+  background-color: aquamarine;
+  border-radius: 10px; 
+  box-shadow: 5px 5px 15px #038C65;
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+}
+/* -border-radius é o arredondamento das bordas da main; box-shadow é a sombra dela sendo o primeiro paramatro das laterais depois para baixo e o quanto ela se espalha, por ultimo a cor; wwidth é a largura da main;  padding é a distancia do texto das bordas e margin é a posição da main  */
+
+h1{
+  color: #025959;
+  text-align: center;
+  text-shadow:2px 2px 2px #198585a5;
+}
+
+h2{
+  color: #02735E;
+}
+
+p {
+  text-align: justify;
+  font-style: italic;
+  font-size:medium;
+}

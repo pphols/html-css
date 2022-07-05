@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* usar charset utf-8 para evitar problemas com a acentuação */
+
+body{
+  background-color: aquamarine;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+h1{
+  color: blueviolet;
+  background-color: aqua;
+}
+h2{
+  color:blue;
+}
+p{
+  text-align: justify;
+}
