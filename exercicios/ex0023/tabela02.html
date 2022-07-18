@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas Grandes</title>
+  <style>
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 80px;
+    }
+    table{
+      width: 800px;
+      border-collapse: collapse;
+    }
+    caption{
+     text-align: center;
+     padding: 5px;
+     font-weight: bold;
+     background-color: rgb(203, 203, 255);
+    }
+    td, th{
+      border: 2px solid black;
+      padding: 10px;
+    }
+    td.num{
+      text-align: right;
+    }
+    td.font{
+      text-align: center;
+    }
+    thead, tfoot{
+      background-color: rgb(26, 26, 154);
+      color: white;
+    }
+    tbody > tr:nth-child(even){
+      background-color: rgb(175, 175, 250);
+    }
+    section{
+      padding: 10px;
+      text-align: justify;
+    }
+    footer{
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Criando uma Tabela Grande</h1>
+
+  <!-- ANATOMIA DA TABELA GRANDE
+      Table
+      CAPTION = legenda da tabela
+          thead = cabeçalho
+            tr td th
+          tbody = corpo
+            tr td th
+          tfoot = rodapé
+            tr td th
+      /Table     -->
+
+  <h2>"Os 20 maiores países do mundo em extensão territorial"</h2>
+    <p>A tabela seguinte apresenta, de acordo com dados levantados pelo site do Instituto Brasileiro de Geografia e Estatística (IBGE), os 20 maiores países do mundo em extensão territorial.</p>
+  <table>
+    <caption>Dados levantados pelo site do Instituto Brasileiro de Geografia e Estatística (IBGE)</caption>
+    <thead>
+      <tr>
+        <th scope="col">País</th>
+        <th scope="col">Extensão territorial (2020)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rússia</td>
+        <td class="num">17.098.246</td>
+      </tr>
+      <tr>
+        <td>Canadá</td>
+        <td class="num">9.984.670</td>
+      </tr>
+      <tr>
+        <td>China</td>
+        <td class="num">9.596.961</td>
+      </tr>
+      <tr>
+        <td>Estados Unidos</td>
+        <td class="num">9.371.174</td>
+      </tr>
+      <tr>
+        <td>Brasil</td>
+        <td class="num">8.515.767</td>
+      </tr>
+      <tr>
+        <td>Astrália</td>
+        <td class="num">7.692.024</td>
+      </tr>
+      <tr>
+        <td>Índia</td>
+        <td class="num">3.287.590</td>
+      </tr>
+      <tr>
+        <td>Argentina</td>
+        <td class="num">2.780.400</td>
+      </tr>
+      <tr>
+        <td>Cazaquistão</td>
+        <td class="num">2.724.900</td>
+      </tr>
+      <tr>
+        <td>Argélia</td>
+        <td class="num">2.381.741</td>
+      </tr>
+      <tr>
+        <td>República Democrática do Congo</td>
+        <td class="num">2.344.858</td>
+      </tr>
+      <tr>
+        <td>Arábia Saudita </td>
+        <td class="num">2.149.690</td>
+      </tr>
+      <tr>
+        <td>México</td>
+        <td class="num">1.964.375</td>
+      </tr>
+      <tr>
+        <td>Indonésia</td>
+        <td class="num">1.904.569</td>
+      </tr>
+      <tr>
+        <td>Sudão</td>
+        <td class="num">1.886.068</td>
+      </tr>
+      <tr>
+        <td>Líbia</td>
+        <td class="num">1.759.540</td>
+      </tr>
+      <tr>
+        <td>Irã</td>
+        <td class="num">1.628.750</td>
+      </tr>
+      <tr>
+        <td>Mongólia</td>
+        <td class="num">1.564.116</td>
+      </tr>
+      <tr>
+        <td>Peru</td>
+        <td class="num">1.285.216</td>
+      </tr>
+      <tr>
+        <td>Chade</td>
+        <td class="num">1.284.000</td> 
+      </tr>
+
+    <tfoot>
+      <tr>
+        <th scope="row">Fonte</th>
+        <td class="font"><strong>IBGE países por Km²</strong></td>
+      </tr>
+    </tfoot>  
+    </tbody>
+  </table>
+   
+  <section>
+    <article>
+      <p><strong>A extensão territorial é a medida total da área de um território.</strong> A unidade de medida adotada, geralmente, é o quilômetro quadrado (km2). Essa medição pode ser aplicada em qualquer superfície do planeta, sendo usualmente adotada para a medição das áreas de cidades, estados e países.</p>
+      <p>Na atualidade, <strong>o maior país do mundo é a Rússia</strong>, que possui cerca de 17 milhões de quilômetros quadrados, ou seja, quase o dobro do segundo maior país em território do mundo. O território da Rússia é tão extenso que <strong>compreende dois continentes (Ásia e Europa)</strong>, diversos tipos de clima e vegetação, além de diferentes fusos horários.</p>
+      <p>O segundo maior país em extensão territorial do mundo é o <strong>Canadá, seguido da China, da Índia e dos Estados Unidos</strong>, sendo que os três possuem, cada um, uma<strong> área aproximada de 9 milhões de quilômetros quadrados.</strong> Completa o grupo dos cinco primeiros países mais extensos do globo o Brasil, que possui uma área de 8.515.767 quilômetros quadrados.</p>
+    </article>
+  </section>
+  <footer>
+    <p>
+      Informações retiradas da página: <a href="https://mundoeducacao.uol.com.br/geografia/os-maiores-paises-mundo.htm" target="_blank">Mundo Educação</a>.
+    </p>
+  </footer>
+</body>
+</html>
