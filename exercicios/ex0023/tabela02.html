@@ -8,6 +8,7 @@
   <style>
     body{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
     }
     h1{
       text-align: center;
@@ -17,6 +18,7 @@
     table{
       width: 800px;
       border-collapse: collapse;
+      position: relative;
     }
     caption{
      text-align: center;
@@ -38,11 +40,17 @@
       background-color: rgb(26, 26, 154);
       color: white;
     }
+    thead > tr > th{
+      position: sticky;
+      top: -1px;
+      background-color: rgb(26, 26, 154);
+    }
+    /* para fixar o cabeçalho de uma tabela devemos primeiro atribuir a tabela o position: relative, e para os elementos de thead position: sticky que cola a thead, junto com o top 0 ou -1, isso fará os elementos escritos descerem junto com a tabela por isso é necessario repetir o background-color novamente. */
     tbody > tr:nth-child(even){
       background-color: rgb(175, 175, 250);
     }
     section{
-      padding: 10px;
+      padding:30px 10px;
       text-align: justify;
     }
     footer{
@@ -66,7 +74,9 @@
       /Table     -->
 
   <h2>"Os 20 maiores países do mundo em extensão territorial"</h2>
-    <p>A tabela seguinte apresenta, de acordo com dados levantados pelo site do Instituto Brasileiro de Geografia e Estatística (IBGE), os 20 maiores países do mundo em extensão territorial.</p>
+    <section>
+      <p>A tabela seguinte apresenta, de acordo com dados levantados pelo site do Instituto Brasileiro de Geografia e Estatística (IBGE), os 20 maiores países do mundo em extensão territorial.</p>
+    </section>
   <table>
     <caption>Dados levantados pelo site do Instituto Brasileiro de Geografia e Estatística (IBGE)</caption>
     <thead>
